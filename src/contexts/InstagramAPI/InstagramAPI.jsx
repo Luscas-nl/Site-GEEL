@@ -7,7 +7,7 @@ export function ApiProvider({ children }) {
     const [posts, setPosts] = useState(null)
 
     const fetchData = async () => {
-        const token = "IGQWRONi1uUm9vazI1U0ZABSkxLUFZAlQS1wZADZAEZAWF1UjNaU2h5dTV2NVlvTjhNdGExY0hDTzloOTlLWXN0YVltX0FTLWl3bnJQSmFrMDBkYjIxRl9ONjBIZAFQzNnI1NVNYNUFsNFdETVdWdzVXQVJsVEJmLXpCVkkZD";
+        const token = "IGQWRQc2dTMFhwWEVublBTOEUzY1g4Y2hMR3lKSkNsbjZAHYjNlOXMwMElQYTd0b1hnSUpiSnVKT19tbk5ESlZATSDl1V1dfQ3pOMzNvdnBnREVibTdmMVBqRW1GYzgtZAEdrVVE0NWotLWV6bkx3b04zWmV6bTBhdUEZD";
         const basicUrl = `https://graph.instagram.com/me/media?fields=caption,id,media_type,timestamp,thumbnail_url,media_url&access_token=${token}`;
 
         try {

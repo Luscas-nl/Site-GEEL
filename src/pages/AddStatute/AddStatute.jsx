@@ -10,7 +10,7 @@ export default function AddStatute(){
     const [fileType, setFileType] = useState(null)
 
     useEffect(() => {
-        const button = document.querySelector(".af_button")
+        const button = document.querySelector(".ast_button")
         if(selectedFile && fileName && fileType){
             button.disabled = false
         } else {
@@ -42,23 +42,29 @@ export default function AddStatute(){
     }
 
     return(
-        <div className="AddFile">
-            <div className="afl_inner">
-                <h1>Edital</h1>
-                <p>upload de editais para o site</p>
+        <div className="AddStatute">
+            <div className="ast_inner">
+                <div className="ast_titleInner">
+                    <div className="ast_title">
+                        <h1>Enviar Edital</h1>
+                        <p>upload de editais para o site</p>
+                    </div>
 
-                <div className="afl_input_inner">
-                    <label htmlFor="afl_name">Nome:</label>
-                    <input value={fileName} onChange={(e) => setFileName(e.target.value)} className="afl_name" type="text" />
+                    <button onClick={(e) => postFileData(e)} className="ast_button">Enviar</button>
                 </div>
 
-                <div className="afl_file_inner">
-                    <label className="afl_label">Arquivo:</label>
-                    <label htmlFor="afl_file" className="afl_img_input">{selectedFile ? selectedFile.name : "Selecione um arquivo"}</label>
-                    <input required onChange={(e) => handleFileChange(e, setSelectedFile)} id="afl_file" type="file" />
-                </div>
+                <div className="ast_uploadIner">
+                    <div className="ast_input_inner">
+                        <p>Nome do arquivo</p>
+                        <input value={fileName} placeholder="Digite o nome de exibição do arquivo" onChange={(e) => setFileName(e.target.value)} className="ast_name" type="text" />
+                    </div>
 
-                <button onClick={(e) => postFileData(e)} className="af_button">Enviar</button>
+                    <div className="ast_file_inner">
+                        <label htmlFor="ast_file" className="ast_img_input">{selectedFile ? selectedFile.name : "Selecione um arquivo"}</label>
+                        <input required onChange={(e) => handleFileChange(e, setSelectedFile)} id="ast_file" type="file" />
+                    </div>
+                    
+                </div>
             </div>
         </div>
     )
