@@ -18,6 +18,7 @@ import AddFriday from "../pages/AddFriday/AddFriday"
 import Files from "../pages/Files/Files"
 import AddFile from "../pages/AddFile/AddFile"
 import AddStatute from "../pages/AddStatute/AddStatute"
+import AddPost from "../pages/AddPost/AddPost"
 
 export default function AppRoutes(props) {
     return(
@@ -40,6 +41,7 @@ export default function AppRoutes(props) {
                         <Route path="admin/friday" element={<AddFriday />} />
                         <Route path="admin/file" element={<AddFile />} />
                         <Route path="admin/statute" element={<AddStatute />} />
+                        <Route path="admin/post" element={<AddPost />} />
                         <Route path="/files" element={<Files />} />
                     </Routes>
                 </DataProvider>

@@ -49,6 +49,7 @@
     border: none;
     border-left: 5px solid black;
     outline: none;
+    font-weight: 600;
 }
 
 .ast_input_inner > input::placeholder{
@@ -107,4 +108,38 @@
     cursor: default;
     outline: none;
     color: white;
+}
+
+[data-theme="dark"] .AddStatute{
+    background-color: #14171D
+}
+
+[data-theme="dark"] .ast_title > h1{
+    color: #C9CED8;
+}
+
+[data-theme="dark"] .ast_title > p{
+    color: #84878d;
+}
+
+[data-theme="dark"] .ast_input_inner > input{
+    background-color: #14171D;
+    color: #C9CED8;
+    border-color: white;
+}
+
+[data-theme="dark"] .ast_input_inner > input:focus{
+    border-color: #3BC96A;
+}
+
+[data-theme="dark"] .ast_input_inner > p{
+    color: #C9CED8;
+}
+
+[data-theme="dark"] .ast_file_inner{
+    border-color: #C9CED8;
+}
+
+[data-theme="dark"] .ast_file_inner > label{
+    color: #C9CED8;
 }

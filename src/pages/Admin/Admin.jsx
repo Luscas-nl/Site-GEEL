@@ -34,7 +34,7 @@ export default function Admin(props) {
     
                 <div className="admOptionsinner">
                     <div className="admGridOptionsInner">
-                        <AdmOption />
+                        <AdmOption to="/admin/post"/>
                         <AdmOption to="/admin/statute" icon="fa-regular fa-copy" title="Novo Edital" desc="Fazer upload de edital"/>
                         <AdmOption icon="fa-regular fa-newspaper" title="Adicionar Jornal" desc="Adicione um novo jornal"/>
                         <AdmOption to="/admin/file" icon="fa-regular fa-file-pdf" title="Adicionar Arquivo" desc="Faça upload de um pdf, docx e etc..."/>
